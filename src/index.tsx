@@ -93,17 +93,17 @@ export interface Props extends Omit<TextInputProps, 'secureTextEntry'> {
   /** Label for the remaining number of characters allowed shown after the number */
   countdownLabel?: string;
   /** Set your custom show password component */
-  customShowPasswordComponent?: JSX.Element;
+  customShowPasswordComponent?: React.JSX.Element;
   /** Set your custom hide password component */
-  customHidePasswordComponent?: JSX.Element;
+  customHidePasswordComponent?: React.JSX.Element;
   /** Callback for show/hide password */
   onTogglePassword?: (show: boolean) => void;
   /** Prop for force toggling show/hide password. If set to true, shows the password, and when set to false hides it. */
   togglePassword?: boolean;
   /** Add left component to your input. Usually used for displaying icon */
-  leftComponent?: JSX.Element;
+  leftComponent?: React.JSX.Element;
   /** Add right component to your input. Be aware if using the input as password this component is positioned before the show/hide component */
-  rightComponent?: JSX.Element;
+  rightComponent?: React.JSX.Element;
   /** Set custom animation duration. Default 300 ms */
   animationDuration?: number;
   /** Label Props */
